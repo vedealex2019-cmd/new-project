@@ -1,0 +1,203 @@
+/* === RESET DE BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* === BODY ET BACKGROUND === */
+body {
+    background-color: #f5f5f5; /* léger gris pour le contraste */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* === HEADER === */
+.site-header {
+    background-color: #009739; /* vert africain */
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;  /* logo réduit */
+    height: auto;
+    margin-right: 15px;
+}
+
+.brand strong {
+    font-size: 1.5rem;
+}
+
+.brand span {
+    display: block;
+    font-size: 0.9rem;
+    color: #ffe600; /* jaune africain */
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* === SEARCH BAR === */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="search"] {
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* === CARDS ET CONTENU === */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.card-content h2, 
+.card-content h3, 
+.cadre h2, 
+.cadre h3 {
+    color: #009739;
+    margin-bottom: 10px;
+}
+
+.card-content p, .card-content ul, table, .cadre p {
+    margin-bottom: 15px;
+}
+
+/* === TABLEAUX === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+table th, table td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+/* === IMAGE GLOBALE === */
+img {
+    max-width: 100%;  /* s'adapte au conteneur */
+    height: auto;     /* garde les proportions */
+    display: block;
+    margin: 10px 0;
+}
+
+/* Images dans les cartes ou cadres pour limiter la taille */
+.card img, 
+.cadre img, 
+section img {
+    max-width: 500px;  /* largeur max des images */
+    height: auto;
+}
+
+/* === SECTIONS === */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* === LISTES === */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* === TITRES === */
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        margin-top: 10px;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .card img, 
+    .cadre img, 
+    section img {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
